@@ -1,0 +1,109 @@
+body {
+    background-color: #f3f4f6; /* Cinza claro moderno */
+    font-family: 'Inter', sans-serif; /* Fonte limpa e profissional */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Centraliza o cartão verticalmente na tela */
+    margin: 0;
+}
+/* O Cartão de Perfil */
+.ficha {
+    background-color: white;
+    width: 320px;
+    padding: 30px 24px;
+    border-radius: 16px; /* Bordas arredondadas modernas */
+    text-align: center;
+    /* Adiciona uma sombra suave para dar profundidade de cartão */
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+/* Foto de Perfil */
+.ficha img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%; /* Deixa redonda */
+    object-fit: cover; /* Garante que a foto não fique distorcida */
+    border: 3px solid purple; /* Borda roxa charmosa ao redor da foto */
+    margin-bottom: 15px;
+}
+
+/* Nome */
+.ficha h1 {
+    color: #111827; /* Tom de preto mais suave e profissional */
+    font-size: 22px;
+    margin: 0 0 5px 0;
+    font-weight: 600;
+}
+
+/* Cargo */
+.ficha .cargo {
+    color: purple; /* Mantendo a sua cor identidade */
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase; /* Letras maiúsculas */
+    letter-spacing: 0.5px; /* Espaçamento entre letras */
+    margin: 0 0 15px 0;
+}
+
+/* Biografia */
+.ficha .bio {
+    color: #4b5563; /* Cinza escuro para melhor leitura */
+    font-size: 14px;
+    line-height: 1.5; /* Melhora o espaçamento das linhas de texto */
+    margin: 0 0 20px 0;
+}
+
+/* Bloco de Redes Sociais */
+.redes-sociais {
+    display: flex;
+    justify-content: center;
+    gap: 10px; /* Espaço entre os links */
+    margin-bottom: 20px;
+}
+
+/* Links das Redes Sociais */
+.btn-rede {
+    width:100px;
+    padding:12px;
+    font-size: 13px;
+    color: #4b5563;
+    text-decoration: none; /* Remove o sublinhado padrão */
+    border: 1px solid #d1d5db;
+    padding: 6px 12px;
+    border-radius: 20px;
+    transition: all 0.2s ease; /* Efeito suave ao passar o mouse */
+
+/*border: none; remove a borda*/
+
+  /* Estilo inicial da borda e fundo */
+  border: 2px solid #ccc; 
+  background-color: transparent;
+  color: #333;
+  
+  /* A transição fica SEMPRE no estado padrão */
+  transition: all 0.2s ease; 
+}
+
+/* 2. ESTADO HOVER: O que muda quando o mouse passa por cima */
+.btn-rede:hover {
+  border-color: purple;       /* A borda muda para roxo */
+  background-color: purple;   /* O fundo fica roxo */
+  color: white;               /* O texto fica branco */
+}
+/* Botão de Contato Principal */
+.btn-contato {
+    background-color: purple;
+    color: white;
+    border: none;
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.btn-contato:hover {
+    background-color: #580058; /* Roxo mais escuro quando passa o mouse */
+}
