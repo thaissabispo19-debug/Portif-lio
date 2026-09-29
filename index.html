@@ -1,39 +1,131 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cartão de Perfil Moderno</title>
+    <title>Portfólio Pessoal | Thaissa Bispo de Souza</title>
     
-     <link rel="stylesheet" href="./css/style.css" />
+    <!-- Links oficiais do Google Fonts para ativar a fonte Inter -->
     <link rel="preconnect" href="https://googleapis.com">
     <link rel="preconnect" href="https://gstatic.com" crossorigin>
     <link href="https://googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
-    
+
+    <!-- Todo o visual do seu cartão moderno centralizado aqui -->
+    <style>
+        body {
+            background-color: #f4f7f6; /* Fundo cinza claro moderno */
+            font-family: 'Inter', sans-serif; /* Fonte profissional configurada */
+            color: #333333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        main {
+            width: 100%;
+            max-width: 450px; /* Limita a largura para parecer um cartão no celular */
+        }
+        .ficha {
+            background-color: #ffffff; /* Fundo branco do cartão */
+            padding: 35px 25px;
+            border-radius: 16px; /* Cantos arredondados modernos */
+            box-shadow: 0 10px 25px rgba(0,0,0,0.05); /* Sombra suave profissional */
+            text-align: center;
+        }
+        .ficha img {
+            width: 130px;
+            height: 130px;
+            border-radius: 50%; /* Foto perfeitamente redonda */
+            object-fit: cover;
+            border: 4px solid #4A90E2; /* Borda azul tecnológica */
+            margin-bottom: 20px;
+        }
+        h1 {
+            font-size: 1.6em;
+            color: #2C3E50;
+            margin: 0 0 8px 0;
+            font-weight: 600;
+        }
+        .cargo {
+            font-size: 1em;
+            color: #4A90E2; /* Destaque azul para o cargo */
+            font-weight: 600;
+            margin: 0 0 20px 0;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        .bio {
+            font-size: 0.95em;
+            line-height: 1.6;
+            color: #555555;
+            margin: 0 0 25px 0;
+        }
+        .redes-sociais {
+            display: flex;
+            gap: 15px; /* Espaço entre os botões das redes */
+            justify-content: center;
+            margin-bottom: 25px;
+        }
+        .btn-rede {
+            flex: 1;
+            max-width: 130px;
+            background-color: #f4f7f6;
+            color: #2C3E50;
+            text-decoration: none;
+            padding: 10px;
+            font-weight: 600;
+            font-size: 0.9em;
+            border-radius: 8px;
+            transition: background-color 0.2s;
+        }
+        .btn-rede:hover {
+            background-color: #E2E8F0;
+        }
+        .btn-contato {
+            display: block;
+            background-color: #2C3E50; /* Cor escura elegante para o botão principal */
+            color: #ffffff;
+            text-decoration: none;
+            padding: 14px;
+            font-weight: bold;
+            font-size: 1em;
+            border-radius: 30px; /* Formato pílula moderno */
+            box-shadow: 0 4px 10px rgba(44,62,80,0.2);
+            transition: background-color 0.2s;
+        }
+        .btn-contato:hover {
+            background-color: #1A252F;
+        }
+    </style>
 </head>
 <body>
 <main>
     <div class="ficha">
-        <!-- Foto de Perfil -->
-        <img src="../imagensLinks/img/fotodeperfil.jpg" alt="Foto de Perfil">
+        <!-- Foto de Perfil (Lembre de ajustar o caminho da foto na sua pasta se necessário) -->
+        <img src="foto.jpn" alt="Foto de Perfil de Thaissa">
+
 
         <!-- Nome e Cargo -->
-        <h1>Thaissa bispo de souza</h1>
-        <p class="cargo">Dev</p>
+        <h1>Thaissa Bispo de Souza</h1>
+        <p class="cargo">Front-End & Dados</p>
 
-        <!-- Biografia -->
+        <!-- Biografia corrigida e alinhada -->
         <p class="bio">
-            Apaixonado por criar interfaces modernas e funcionais. 
+            Apaixonada por tecnologia, gerenciamento de dados e por transformar ideias em interfaces modernas, visuais e funcionais.
         </p>
 
-        <!-- Redes Sociais -->
+        <!-- Redes Sociais com links atualizados -->
         <div class="redes-sociais">
-            <a href="https://www.linkedin.com/in/thaissa-bispo-a470b0406/" class="btn-rede">LinkedIn</a>
-            <a href="https://github.com/thaissabispo19-debug" class="btn-rede">GitHub</a>
-        </div>
+    <a href="https://linkedin.com" target="_blank" class="btn-rede">LinkedIn</a>
+    <a href="https://github.com" target="_blank" class="btn-rede">GitHub</a>
+</div>
 
-        <!-- Botão de Contato -->
-        <button a href="" class="btn-contato">Entrar em Contato</button>
+        <!-- Botão de Contato Corrigido (Tag <a> ideal para redirecionamentos) -->
+        <!-- Substitua o '#' pelo link do seu WhatsApp para receber mensagens diretas -->
+        <a href="#" target="_blank" class="btn-contato">Entrar em Contato</a>
     </div>
 </main>
 </body>
